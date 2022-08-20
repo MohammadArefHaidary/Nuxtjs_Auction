@@ -1,0 +1,10 @@
+@import url(~/assets/css/fontiran.css);
+
+body {
+    font-family: iransans !important;
+    /* font-family: iransans, Tahma; */
+    font-weight: 300;
+    /* background-color: #e2e2e2; */
+    margin: 0;
+
+}
