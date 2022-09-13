@@ -3,23 +3,23 @@
     <div class="wrapper bg-white" style="direction: rtl">
       <div class="h2 text-center">لوگو</div>
       <div class="h4 text-muted text-center pt-2">مشخصات خودرا وارد کنید.</div>
-      <form class="pt-3">
+      <form class="pt-3" action="#" method="post"  @submit.prevent="submitForm">
         <div class="form-group py-2">
           <div class="input-field">
             <span class="far fa-user p-2" style="color: black"></span>
-            <input type="text" placeholder="نام کاربری" required class="" />
+            <input type="text" name="username" v-model="form.username" placeholder="نام کاربری" required class="" />
           </div>
         </div>
         <div class="form-group py-2">
           <div class="input-field">
             <span class="far fa-user p-2" style="color: black"></span>
-            <input type="text" placeholder="ایمیل" required class="" />
+            <input type="email" name="email" v-model="form.email" placeholder="ایمیل" required class="" />
           </div>
         </div>
         <div class="form-group py-1 pb-2">
           <div class="input-field">
             <span class="fas fa-lock p-2" style="color: black"></span>
-            <input type="text" placeholder="رمز " required class="" />
+            <input type="password" name="password" v-model="form.password" placeholder="رمز " required class="" />
             <button class="btn bg-white text-muted">
               <span class="far fa-eye-slash"></span>
             </button>
@@ -28,7 +28,7 @@
         <div class="form-group py-1 pb-2">
           <div class="input-field">
             <span class="fas fa-lock p-2" style="color: black"></span>
-            <input type="text" placeholder=" تکرار رمز  " required class="" />
+            <input type="password" name="password_confirmation" v-model="form.password_confirmation" placeholder=" تکرار رمز  " required class="" />
             <button class="btn bg-white text-muted">
               <span class="far fa-eye-slash"></span>
             </button>
@@ -38,7 +38,7 @@
           class="d-flex align-items-start"
           style="justify-content: space-around"
         ></div>
-        <button class="btn btn-block text-center my-3">ثبت نام</button>
+        <input type="submit" value="ثبت نام" class="btn btn-block text-center my-3">
       </form>
     </div>
   </div>
@@ -46,9 +46,39 @@
 
 <script>
 export default {
-  name: "register",
+  data() {
+    return {
+      errors: {},
+      form: {
+        username: "",
+        email: "",
+        password: "",
+        password_confirmation: "",
+      },
+    };
+  },
+  methods: {
+    async submitForm() {
+      // this.errors = "";
+      await this.$axios.$get("sanctum/csrf-cookie");
+      await this.$axios
+        .post("api/auth/register", {
+          name: this.form.name,
+          email: this.form.email,
+          password: this.form.password,
+          password_confirmation: this.form.password_confirmation,
+        })
+        .then(function (resp) {
+          console.log(resp);
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+    },
+  },
 };
 </script>
+
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap");

@@ -5,12 +5,13 @@
       <div class="h4 text-muted text-center pt-2">
         مشخصات ورود خودرا وارد کنید.
       </div>
-      <form @submit.prevent="login" class="pt-3">
+      <form class="pt-3">
         <div class="form-group py-2">
           <div class="input-field">
             <span class="far fa-user p-2" style="color: black"></span>
             <input style="direction: rtl !important;"
               type="email"
+              name="email"
               id="email"
               v-model="form.email"
               placeholder="ایمیل خود را وارد کنید"
@@ -40,12 +41,12 @@
           class="d-flex align-items-start"
           style="justify-content: space-around"
         >
-          <div class="remember">
+          <!-- <div class="remember">
             <label class="option text-muted">
               ذخیره <input type="radio" name="radio"/>
               <span class="checkmark"></span>
             </label>
-          </div>
+          </div> -->
           <div class="ml-auto">
             <a href="#" id="forgot" style="color: black"
             >رمز را فراموش کردین؟</a
@@ -55,7 +56,7 @@
         <button class="btn btn-block text-center my-3">ورود</button>
         <div class="text-center pt-3 text-muted">
           عضو نیستید؟
-          <NuxtLink to="/register" style="color: black"
+          <NuxtLink to="/register" style="color: black" @click="submitForm"
           >ثبت نام
           </NuxtLink>
         </div>
@@ -65,9 +66,11 @@
 </template>
 
 <script>
+// import swal from 'sweetalert2'
 export default {
   data() {
     return {
+      errors: {},
       form: {
         email: "",
         password: "",
@@ -75,14 +78,18 @@ export default {
     };
   },
   methods: {
-    async login() {
+    async submitForm() {
+      this.errors = {};
       try {
-        this.$auth.loginWith("laravelSanctum", {
-          data: this.form
-        });
+        await this.$axios.$post("api/auth/login", this.form);
+      } catch (error) {
+        // this.$router.push({ name: "auth-login" });
 
-      } catch (e) {
-        //
+        if (error.response.status === 422) {
+          this.errors = error?.response?.data?.errors;
+          return;
+        }
+        // if (error.response.status === 401) {
       }
     },
   },
