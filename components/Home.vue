@@ -141,7 +141,7 @@
                             dir="ltr">@arefhaidary</a></div>
                 </div>
                 <div class="main-card gallery">
-                     <card1  v-for="contact in contacts1"
+                     <card  v-for="contact in contacts1"
                                 :key="contact.id"
                                 :image="contact.image"
                                 :src="contact.src"
@@ -185,7 +185,7 @@
                 </div>
                 <div class="main-card gallery">
                 
-                  <card2  v-for="contact in contacts2"
+                  <card  v-for="contact in contacts2"
                                 :key="contact.id"
                                 :image="contact.image"
                                 :src="contact.src"
@@ -244,14 +244,10 @@
 
 <script>
 import card from "~/components/card.vue";
-import card1 from "~/components/card1.vue";
-import card2 from "~/components/card2.vue";
 
 export default {
   components: {
     card,
-    card1,
-    card2,
   },
   data: function () {
     return {

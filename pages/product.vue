@@ -245,412 +245,25 @@
           <div class="col-md-6 gx-5">
             <h2>منشأ</h2>
             <hr />
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container-fluid pro my-2">
-              <div
-                class="d-flex"
-                style="justify-content: space-between; align-items: center"
-              >
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                  "
-                >
-                  <div class="space">
-                    <div>ضرب شده توسط @cutssss</div>
-                    <div>Jun 7, 2022 at 6:42pm</div>
-                  </div>
-                  <a href="">
-                    <div class="offer">
-                      <img
-                        src="~/assets/images/new.avif"
-                        alt=""
-                        class="img-fluid"
-                        style="border-radius: 50%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div style="display: flex">
-                  <div style="margin-left: 10px">0.50 ETH</div>
-                  <div>
-                    <a
-                      style="color: gray"
-                      href="https://etherscan.io/tx/0xff18f03935d7d1eead522f52f11115b8c4a0cf8b8fdc2642a2d48c08e4fd3002"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="View on Etherscan"
-                      class="st--c-PJLV st--c-kFlVdX st--c-cvvxlb st--c-dRgmCk"
-                      ><svg
-                        class="svg-hover"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                      >
-                        <path
-                          d="M14.9998 0H7.9998V2H12.5998L6.2998 8.3L7.6998 9.7L13.9998 3.4V8H15.9998V1C15.9998 0.4 15.5998 0 14.9998 0Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M14 16H1C0.4 16 0 15.6 0 15V2C0 1.4 0.4 1 1 1H5V3H2V14H13V11H15V15C15 15.6 14.6 16 14 16Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <product-card
+            v-for="contact in contacts"
+                                :key="contact.id"
+                                :image="contact.image"
+                                :src="contact.src"
+                                :alt="contact.alt"
+                                :width="contact.width"
+                                :height="contact.height"
+                                :heading="contact.title"
+                                :link="contact.link"
+                                :href="contact.url"
+                                :title="contact.title"
+                                :anchor="contact.anchor"
+                                :username="contact.username"
+                                :time="contact.time"
+                                :date="contact.date"
+             />
+            
+
           </div>
         </div>
       </section>
@@ -659,8 +272,98 @@
 </template>
 
 <script>
+import product_card from "~/components/product_card.vue";
+
 export default {
-  name: "contact",
+  components: {
+    product_card,
+  },
+  data: function () {
+    return {
+      contacts: [
+        {
+          id: 1,
+          username: "Ali@",
+          time: "6:42pm",
+          date: "Jun 7, 2022",
+          image: {
+            src: "new.avif",
+            alt: "######",
+          },
+          title: "Address",
+          link: {
+            url: "######",
+            title: "######",
+            anchor: "######",
+          },
+        },
+        {
+          id: 2,
+          time: "1:30pm",
+          username: "Ahmad@",
+          date: "mar 6, 2021",
+          image: {
+            src: "new.avif",
+            alt: "######",
+          },
+          title: "Phone",
+          link: {
+            url: "######",
+            title: "######",
+            anchor: "######",
+          },
+        },
+        {
+          id: 3,
+          time: "8:23am",
+          username: "Hasan@",
+          date: "sep 5, 2020",
+          image: {
+            src: "new.avif",
+            alt: "######",
+          },
+          title: "Email",
+          link: {
+            url: "mailto:######",
+            title: "######",
+            anchor: "######",
+          },
+        },
+        {
+          id: 4,
+          time: "7:32pm",
+          username: "Sana@",
+          date: "Jun 9, 2022",
+          image: {
+            src: "new.avif",
+            alt: "######",
+          },
+          title: "Email",
+          link: {
+            url: "mailto:######",
+            title: "######",
+            anchor: "######",
+          },
+        },
+        {
+          id: 5,
+          time: "03:09pm",
+          username: "Sara@",
+          date: "Aug 26, 2022",
+          image: {
+            src: "new.avif",
+            alt: "######",
+          },
+          title: "Email",
+          link: {
+            url: "mailto:######",
+            title: "######",
+            anchor: "######",
+          },
+        },
+      ],
+    };
+  },
 };
 </script>
 
