@@ -13,7 +13,7 @@
                 >
                   <div class="space">
                     <div>ضرب شده توسط {{username}}</div>
-                    <div>{{date}} at {{time}}</div>
+                    <div @click="alertName()">{{date}} at {{time}}</div>
                   </div>
                   <a href="">
                     <div class="offer">
@@ -63,6 +63,8 @@
 export default {
   name: "product_card",
   props: {
+    name: String,
+    title: String,
     id: "",
     username: "",
     time: "",
@@ -78,6 +80,13 @@ export default {
       url: "",
       title: "",
       anchor: "",
+    },
+  },
+
+  methods: {
+    alertName() {
+      alert(this.name, this.title);
+      this.$emit("nameClicked", this.name, this.title);
     },
   },
 };

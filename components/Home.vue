@@ -13,6 +13,8 @@
 
                         <h2>تاپ تهران آثار</h2>
 
+                        {{ posts }}
+
 
                 <div>
                     <div class="r1">
@@ -245,7 +247,33 @@
 <script>
 import card from "~/components/card.vue";
 
+import { ref, onMounted } from "vue";
+
+// import axios from "axios";
+
 export default {
+  setup() {
+    const posts = ref([]);
+
+    onMounted(() => {
+      let response = [
+        {
+          uuid: "werwet4646yh",
+          title: "untitled post",
+          slug: "dfdf",
+          teaser: null,
+          body: null,
+          published: true,
+        },
+      ];
+
+      posts.value = response;
+    });
+
+    return {
+      posts,
+    };
+  },
   components: {
     card,
   },

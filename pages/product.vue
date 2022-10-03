@@ -247,6 +247,7 @@
             <hr />
             <product-card
             v-for="contact in contacts"
+                                :name="name"
                                 :key="contact.id"
                                 :image="contact.image"
                                 :src="contact.src"
@@ -256,11 +257,14 @@
                                 :heading="contact.title"
                                 :link="contact.link"
                                 :href="contact.url"
-                                :title="contact.title"
+                                :title="title"
                                 :anchor="contact.anchor"
                                 :username="contact.username"
                                 :time="contact.time"
                                 :date="contact.date"
+
+                                @nameClicked="test"
+                                
              />
             
 
@@ -278,8 +282,10 @@ export default {
   components: {
     product_card,
   },
-  data: function () {
+  data() {
     return {
+      name: "Mohammad",
+      title: "World",
       contacts: [
         {
           id: 1,
@@ -363,6 +369,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    test(text, title) {
+      console.log("test" + " " + text + " " + title);
+    },
   },
 };
 </script>
