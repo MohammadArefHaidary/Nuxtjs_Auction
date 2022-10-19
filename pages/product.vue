@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container mb-4">
+      {{ posts }}
       <div class="row">
         <div
           class="col-md-12 d-flex justify-content-center"
@@ -277,8 +278,14 @@
 
 <script>
 import product_card from "~/components/product_card.vue";
+import { usePosts } from "../composables/usePosts";
 
 export default {
+  setup() {
+    const { posts } = usePosts();
+
+    return { posts };
+  },
   components: {
     product_card,
   },

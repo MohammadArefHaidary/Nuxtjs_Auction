@@ -22,6 +22,7 @@
                                 <div>0.05 eth</div>
                                 <div>
                                     4س6د2ث
+                                    {{ posts }}
                                 </div>
                             </div>
 
@@ -32,7 +33,13 @@
 </template>
 
 <script>
+import { usePosts } from "../composables/usePosts";
 export default {
+  setup() {
+    const { posts } = usePosts();
+
+    return { posts };
+  },
   name: "card",
   props: {
     id: "",
