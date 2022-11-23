@@ -75,14 +75,14 @@ export default {
     strategies: {
       laravelSanctum: {
         provider: "laravel/sanctum",
-        url: "http://lora122.ir",
+        url: "http://auction.lora122.ir",
       },
     },
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: "http://lora122.ir",
+    baseURL: "http://auction.lora122.ir",
     credentials: true,
     // proxy:false
   },

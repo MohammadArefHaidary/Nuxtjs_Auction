@@ -7,7 +7,7 @@
         <div class="form-group py-2">
           <div class="input-field">
             <span class="far fa-user p-2" style="color: black"></span>
-            <input type="text" name="username" v-model="form.username" placeholder="نام کاربری" required class="" />
+            <input type="text" name="name" v-model="form.name" placeholder="نام کاربری" required class="" />
           </div>
         </div>
         <div class="form-group py-2">
@@ -50,7 +50,7 @@ export default {
     return {
       errors: {},
       form: {
-        username: "",
+        name: "",
         email: "",
         password: "",
         password_confirmation: "",
