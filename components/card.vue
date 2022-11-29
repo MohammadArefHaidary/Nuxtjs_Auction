@@ -22,7 +22,7 @@
                                 <div>0.05 eth</div>
                                 <div>
                                     4س6د2ث
-                                    {{ posts }}
+                                    <!-- {{ posts }} -->
                                 </div>
                             </div>
 
