@@ -5,7 +5,7 @@
       <div class="h4 text-muted text-center pt-2">
         مشخصات ورود خودرا وارد کنید.
       </div>
-      <form class="pt-3">
+      <form class="pt-3" action="#" method="post"  @submit.prevent="login">
         <div class="form-group py-2">
           <div class="input-field">
             <span class="far fa-user p-2" style="color: black"></span>
@@ -56,7 +56,7 @@
         <button class="btn btn-block text-center my-3">ورود</button>
         <div class="text-center pt-3 text-muted">
           عضو نیستید؟
-          <NuxtLink to="/register" style="color: black" @click="submitForm"
+          <NuxtLink to="/register" style="color: black"
           >ثبت نام
           </NuxtLink>
         </div>
@@ -78,19 +78,10 @@ export default {
     };
   },
   methods: {
-    async submitForm() {
-      this.errors = {};
-      try {
-        await this.$axios.$post("api/auth/login", this.form);
-      } catch (error) {
-        // this.$router.push({ name: "auth-login" });
-
-        if (error.response.status === 422) {
-          this.errors = error?.response?.data?.errors;
-          return;
-        }
-        // if (error.response.status === 401) {
-      }
+    login() {
+      this.$auth.loginWith("laravelSanctum", {
+        data: this.form
+      });
     },
   },
 };
