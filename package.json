@@ -14,6 +14,7 @@
     "axios": "^0.27.2",
     "codyhouse-framework": "^3.0.6",
     "core-js": "^3.19.3",
+    "material-symbols": "^0.4.0",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
