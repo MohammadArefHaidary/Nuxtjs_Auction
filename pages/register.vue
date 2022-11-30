@@ -68,13 +68,13 @@ export default {
           password: this.form.password,
           password_confirmation: this.form.password_confirmation,
         })
-      this.$router.replace({name: 'index'})
+      // this.$router.replace({name: 'index'})
 
         .then(function (resp) {
-          console.log(resp);
+          // console.log(resp);
         })
         .catch(function (err) {
-          console.log(err);
+          console.log(err.response.data.errors);
         });
       // await this.$auth.loginWith('laravelSanctum' , {
       //   data : { email: this.form.email , password:this.form.password}

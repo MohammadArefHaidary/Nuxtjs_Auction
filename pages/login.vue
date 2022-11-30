@@ -78,9 +78,13 @@ export default {
     };
   },
   methods: {
-    login() {
-      this.$auth.loginWith("laravelSanctum", {
+    async login() {
+      await this.$auth.loginWith("laravelSanctum", {
         data: this.form
+      })
+    .catch((err) => {
+        // console.log(JSON.parse(JSON.stringify(err)));
+        console.log(err.response.data.errors.email);
       });
     },
   },
