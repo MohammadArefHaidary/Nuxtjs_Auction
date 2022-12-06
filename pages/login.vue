@@ -37,6 +37,10 @@
             </button>
           </div>
         </div>
+          <!-- <div : this.err.response.data.errors.email >
+
+          </div> -->
+      {{errors}}
         <div
           class="d-flex align-items-start"
           style="justify-content: space-around"
@@ -79,13 +83,15 @@ export default {
   },
   methods: {
     async login() {
-      await this.$auth.loginWith("laravelSanctum", {
-        data: this.form
-      })
-    .catch((err) => {
-        // console.log(JSON.parse(JSON.stringify(err)));
-        console.log(err.response.data.errors.email);
-      });
+      await this.$auth
+        .loginWith("laravelSanctum", {
+          data: this.form,
+        })
+        .catch((err) => {
+          // console.log(JSON.parse(JSON.stringify(err)));
+          console.log(err.response.data.errors.email);
+          this.errors = err.response.data.errors.email;
+        });
     },
   },
 };
