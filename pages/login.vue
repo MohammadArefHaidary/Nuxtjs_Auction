@@ -87,6 +87,11 @@ export default {
         .loginWith("laravelSanctum", {
           data: this.form,
         })
+
+        .then((data) => {
+          console.log(data);
+          this.$router.push("/product");
+        })
         .catch((err) => {
           // console.log(JSON.parse(JSON.stringify(err)));
           console.log(err.response.data.errors.email);
