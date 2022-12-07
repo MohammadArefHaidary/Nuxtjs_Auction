@@ -5,12 +5,13 @@
       <div class="h4 text-muted text-center pt-2">
         مشخصات ورود خودرا وارد کنید.
       </div>
-      <form @submit.prevent="login" class="pt-3">
+      <form class="pt-3" action="#" method="post"  @submit.prevent="login">
         <div class="form-group py-2">
           <div class="input-field">
             <span class="far fa-user p-2" style="color: black"></span>
             <input style="direction: rtl !important;"
               type="email"
+              name="email"
               id="email"
               v-model="form.email"
               placeholder="ایمیل خود را وارد کنید"
@@ -36,16 +37,20 @@
             </button>
           </div>
         </div>
+          <!-- <div : this.err.response.data.errors.email >
+
+          </div> -->
+      {{errors}}
         <div
           class="d-flex align-items-start"
           style="justify-content: space-around"
         >
-          <div class="remember">
+          <!-- <div class="remember">
             <label class="option text-muted">
               ذخیره <input type="radio" name="radio"/>
               <span class="checkmark"></span>
             </label>
-          </div>
+          </div> -->
           <div class="ml-auto">
             <a href="#" id="forgot" style="color: black"
             >رمز را فراموش کردین؟</a
@@ -65,9 +70,11 @@
 </template>
 
 <script>
+// import swal from 'sweetalert2'
 export default {
   data() {
     return {
+      errors: {},
       form: {
         email: "",
         password: "",
@@ -76,14 +83,20 @@ export default {
   },
   methods: {
     async login() {
-      try {
-        this.$auth.loginWith("laravelSanctum", {
-          data: this.form
-        });
+      await this.$auth
+        .loginWith("laravelSanctum", {
+          data: this.form,
+        })
 
-      } catch (e) {
-        //
-      }
+        .then((data) => {
+          console.log(data);
+          this.$router.push("/product");
+        })
+        .catch((err) => {
+          // console.log(JSON.parse(JSON.stringify(err)));
+          console.log(err.response.data.errors.email);
+          this.errors = err.response.data.errors.email;
+        });
     },
   },
 };

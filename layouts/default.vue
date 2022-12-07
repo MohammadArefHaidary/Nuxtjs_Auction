@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import AppHeader from '~/components/inc/AppHeader.vue';
-import AppFooter from '~/components/inc/AppFooter.vue';
+import AppHeader from "~/components/inc/AppHeader.vue";
+import AppFooter from "~/components/inc/AppFooter.vue";
 
 export default {
-  name: 'default',
+  name: "default",
 
   components: {
     AppHeader,
     AppFooter,
-  }
-}
+  },
+};
 </script>
