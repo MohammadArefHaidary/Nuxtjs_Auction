@@ -1,7 +1,9 @@
 <template>
 
 <div>
+  <client-only>
    <Home />
+   </client-only>
 </div>
 </template>
 
