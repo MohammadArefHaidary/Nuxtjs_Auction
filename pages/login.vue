@@ -40,7 +40,7 @@
           <!-- <div : this.err.response.data.errors.email >
 
           </div> -->
-      {{errors}}
+     <p style="color:red;direction:ltr;" > {{errors.email}} </p> 
         <div
           class="d-flex align-items-start"
           style="justify-content: space-around"
@@ -74,7 +74,10 @@
 export default {
   data() {
     return {
-      errors: {},
+      errors: {
+        email: "",
+        password: "",
+      },
       form: {
         email: "",
         password: "",
@@ -83,19 +86,19 @@ export default {
   },
   methods: {
     async login() {
-      await this.$auth
+      let response = await this.$auth
         .loginWith("laravelSanctum", {
           data: this.form,
         })
 
-        .then((data) => {
-          console.log(data);
+        .then((res) => {
+          console.log(res);
           this.$router.push("/product");
         })
-        .catch((err) => {
+        .catch((e) => {
           // console.log(JSON.parse(JSON.stringify(err)));
-          console.log(err.response.data.errors.email);
-          this.errors = err.response.data.errors.email;
+          // console.log(err);
+          this.errors.email = e.response.data.message;
         });
     },
   },
