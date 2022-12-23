@@ -26,7 +26,7 @@
 
     </div>
 
-    <div class="container-fluid">
+    <div class="">
       <div id="nav4">
         <nav class="navbar navbar-expand-lg">
           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
@@ -45,6 +45,8 @@
             <ul class="navbar-nav" dir="rtl">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#" style="color:black;">کاوش</a>
+              </li><li class="nav-item">
+                <nuxt-link to="/profile" class="nav-link active" aria-current="page" href="#" style="color:black;">پروفایل</nuxt-link>
               </li>
             </ul>
 
@@ -89,11 +91,11 @@
 export default {
   methods: {
     async logout() {
-      await this.$auth.logout()
-      this.$router.replace({name: 'index'})
-    }
-  }
-}
+      await this.$auth.logout();
+      this.$router.replace({ name: "index" });
+    },
+  },
+};
 </script>
 
 <style>

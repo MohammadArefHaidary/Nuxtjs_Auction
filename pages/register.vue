@@ -35,6 +35,10 @@
             </button>
           </div>
         </div>
+            <p style="color:red;direction:ltr;" > {{errors.password}} </p> 
+            <p style="color:red;direction:ltr;" > {{errors.email}} </p> 
+            <!-- <p style="color:red;direction:ltr;"  :v-for="error in email" :key="errors">  {{error}} </p>  -->
+
         <div
           class="d-flex align-items-start"
           style="justify-content: space-around"
@@ -49,7 +53,10 @@
 export default {
   data() {
     return {
-      errors: {},
+      errors: {
+        email: "",
+        password: "",
+      },
       form: {
         name: "",
         email: "",
@@ -73,8 +80,17 @@ export default {
         .then(function (resp) {
           // console.log(resp);
         })
-        .catch(function (err) {
-          console.log(err.response.data.errors.email);
+        // .catch(function (err) {
+        //   console.log(err.response.data.errors.email);
+        //   this.errors.email = err.response.data.errors.email;
+        // });
+        .catch((e) => {
+          // console.log(JSON.parse(JSON.stringify(err)));
+          // console.log(err);
+          console.log(e);
+          this.errors.email = e.response.data.errors.email;
+          this.errors.password = e.response.data.errors.password;
+          console.log(typeof e.response.data.errors.email);
         });
       // await this.$auth.loginWith('laravelSanctum' , {
       //   data : { email: this.form.email , password:this.form.password}
