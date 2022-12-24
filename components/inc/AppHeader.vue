@@ -28,7 +28,7 @@
 
     <div class="">
       <div id="nav4">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar  navbar-expand-lg">
           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
                   data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                   aria-label="Toggle navigation">
@@ -98,7 +98,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .logo-img {
   width: 80px;
 }

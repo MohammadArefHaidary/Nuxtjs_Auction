@@ -43,22 +43,22 @@
         </div>
     </footer>
     <!-- ENd of large screen footer -->
-     <div class="tab-nav-container">
+    <div class="tab-nav-container">
         <div class="tab active purple">
             <i class="fas fa-home"></i>
-            <!-- <p>خانه</p> -->
+            <p>خانه</p>
         </div>
         <div class="tab pink">
             <i class="far fa-heart"></i>
-            <!-- <p>لایک ها</p> -->
+            <p>لایک ها</p>
         </div>
         <div class="tab yellow">
             <i class="fas fa-search"></i>
-            <!-- <p>جستجو</p> -->
+            <p>جستجو</p>
         </div>
         <div class="tab teal">
             <i class="far fa-user"></i>
-            <!-- <p>پروفایل</p> -->
+            <p>پروفایل</p>
         </div>
     </div>
   </div>
@@ -66,7 +66,7 @@
 
 <script>
 export default {
-  name: 'AppFooter',
+  name: "AppFooter",
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="d-flex flex-direction-row-reverse justify-content-between align-items-center" 
-    style="margin-top:-88px;">
+    <div class="back_image " ></div>
+    <div class="d-flex flex-direction-row-reverse justify-content-between align-items-center mt-5">
       <div style="z-index:1;margin-right:100px;">
         <img src="~/assets/images/pexels-photo-1448136.jpeg" alt=""  
         style="width:115px;height:115px;border-radius:50%;">
@@ -30,6 +30,14 @@
       </div>
     </div>
 
+    <div class="mb-5 mt-5 d-flex justify-content-center" dir="rtl">
+      <div>
+      <h1 class="d-flex justify-content-center">شما هنوز صاحب هیچ nft نیستید</h1>
+      <p>با ایجاد اولین nft خود شروع کنید یا برای یافتن چیزی برای اضافه کردن مجموعه خود مرور کنید</p> 
+      <div class="d-flex justify-content-center mt-3"><button class="btn_style">ایجاد</button><button class="btn_style ms-2">جستجو</button></div>
+      </div>
+    </div>
+
 
    </div>
 </template>
@@ -41,9 +49,31 @@ export default {
 </script>
 
 <style scoped>
+.dark {
+  opacity: 30%;
+}
+.back_image {
+  background-image: url("~/assets/images/pexels-photo-2225440.jpeg");
+  padding-bottom: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 240px;
+  z-index: -1;
+  opacity: 77%;
+}
 .btn_style {
   background-color: white;
   border-radius: 22px;
   padding: 4px 11px;
+}
+
+.navbar {
+  opacity: 40% !important;
 }
 </style>

@@ -58,3 +58,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.navbar {
+  background-image: none;
+}
+</style>
