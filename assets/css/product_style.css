@@ -784,3 +784,21 @@ a:hover {
     display: none;
   }
 }
+
+
+.mg {
+  margin-top: 47px;
+
+}
+
+@media (max-width:992px) {
+
+  .mg {
+    margin-top: 163px;
+
+  }
+
+  .mgr {
+    margin-right: 100px;
+  }
+}
