@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="['index', 'profile','login','product'].indexOf($route.name) > -1">
     <div class="main-mobile-nav">
       <div class="mobile-nav">
         <i class='fas fa-arrow-right'></i>
@@ -44,7 +44,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" dir="rtl">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="color:black;">کاوش</a>
+                <NuxtLink to="/create" class="nav-link active" aria-current="page" href="#" style="color:black;">ایجاد</NuxtLink>
               </li><li class="nav-item">
                 <nuxt-link to="/profile" class="nav-link active" aria-current="page" href="#" style="color:black;">پروفایل</nuxt-link>
               </li>

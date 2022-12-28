@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="['index', 'profile','login','product'].indexOf($route.name) > -1">
      <footer dir="rtl">
         <div class="main-div-footer">
             <div class="logo-footer">
