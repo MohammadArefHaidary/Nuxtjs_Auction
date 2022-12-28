@@ -45,9 +45,16 @@
             <ul class="navbar-nav" dir="rtl">
               <li class="nav-item">
                 <NuxtLink to="/create" class="nav-link active" aria-current="page" href="#" style="color:black;">ایجاد</NuxtLink>
-              </li><li class="nav-item">
-                <nuxt-link to="/profile" class="nav-link active" aria-current="page" href="#" style="color:black;">پروفایل</nuxt-link>
               </li>
+              
+             <template v-if="$auth.loggedIn">
+                <li class="nav-item">
+                  <nuxt-link to="/profile" class="nav-link active" aria-current="page" href="#" style="color:black;">
+                    {{$auth.user.name}}
+                  </nuxt-link>
+                </li>
+              </template>
+              
             </ul>
 
             <template v-if="!$auth.loggedIn">
