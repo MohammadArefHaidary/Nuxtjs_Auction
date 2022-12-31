@@ -8,6 +8,7 @@
                         src="~/assets/images/new.avif" alt="" style="width: 100%;" class="img-fluid">
              </NuxtLink>
             </div>
+            
             <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 column2" dir="rtl">
 
 
