@@ -27,6 +27,7 @@
 
 <script>
 export default {
+  auth: true,
   name: "create",
 };
 </script>

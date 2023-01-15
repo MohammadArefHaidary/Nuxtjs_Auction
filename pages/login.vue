@@ -85,6 +85,7 @@ export default {
     };
   },
   methods: {
+    auth: true,
     async login() {
       let response = await this.$auth
         .loginWith("laravelSanctum", {

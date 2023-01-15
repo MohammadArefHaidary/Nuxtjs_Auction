@@ -253,6 +253,7 @@ import { ref, onMounted } from "vue";
 // import axios from "axios";
 
 export default {
+  // auth: true,
   setup() {
     const posts = ref([]);
 

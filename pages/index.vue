@@ -11,6 +11,7 @@
 import Home from "~/components/Home.vue";
 
 export default {
+  auth: false,
   name: "IndexPage",
   components: { Home },
   head() {

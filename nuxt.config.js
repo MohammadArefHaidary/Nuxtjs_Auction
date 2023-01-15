@@ -1,5 +1,10 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+
+  router: {
+    middleware: ["auth"],
+  },
+
   head: {
     title: "Auction website",
     htmlAttrs: {

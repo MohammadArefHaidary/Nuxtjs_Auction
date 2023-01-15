@@ -14,7 +14,8 @@
 
     <div class="d-flex justify-content-between flex-wrap">
       <div style="margin-right:100px;">
-        <div>{{$auth.user.name}}</div>
+        <div v-if="$auth.loggedIn">{{$auth.user.name}}</div>
+
         <div class="d-flex flex-row-reverse"><div style="margin-right:10px"><button class="btn_style">0*1233...1334</button></div><div><button class="btn_style">ادیت پروفایل</button></div></div>
         <div class="mt-2">دیزاینر</div>
         <div>وب دیزاینر</div>
@@ -44,6 +45,7 @@
 
 <script>
 export default {
+  auth: true,
   name: "profile",
 };
 </script>
