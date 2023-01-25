@@ -566,13 +566,7 @@ body {
   }
 }
 
-.wallet {
-  margin-left: 42px;
-}
 
-.wallet:hover {
-  box-shadow: #921818;
-}
 
 .btn {
   padding-left: 32px;
@@ -645,9 +639,6 @@ body {
   padding-top: 48px;
 }
 
-.wallet {
-  margin-left: 5px;
-}
 
 .mobile-nav {
   display: flex;

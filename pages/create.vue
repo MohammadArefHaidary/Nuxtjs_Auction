@@ -11,14 +11,20 @@
                       مراقبت از آنها به نرمی، وظایف، فرار نمی دانم؟</p>
                <form>
                   <label for="fname">نام مجموعه</label>
-                  <input type="text" id="fname" name="fname" required="required">
+                  <input type="text" v-model="collection_name" id="fname" name="fname" required="required">
                   <label for="lname">سمبول مجموعه</label>
-                  <input type="text" id="lname" name="lname" required="required">
+                  <input type="text" v-model="collection_sambol" id="lname" name="lname" required="required">
                   <button style="background-color: #80808014;">ادامه</button>
                 </form>
             </div>
-            <div style="width: 268px;height: 363px;background-color: #8080800f;border-radius: 17px;box-shadow: 0px 0px 1px #000000f0;">
+            <div style="display: flex;flex-direction: column;justify-content: space-between;width: 268px;height: 363px;background-color: #8080800f;border-radius: 17px;box-shadow: 0px 0px 1px #000000f0;">
+              <div class="d-flex justify-content-around mt-3">
+                <div style="width:70px;height:70px;background-color:green;"></div>
+                <div><p> {{ collection_name }}</p></div>
+              </div>
+              <div class="mb-3"><p class="ms-4">{{ collection_sambol }}</p></div>
             </div>
+            
         </div>
     </div>
     
@@ -29,6 +35,15 @@
 export default {
   auth: true,
   name: "create",
+  data() {
+    return {
+      collection_name: "",
+      collection_sambol: "",
+      // country: "",
+      // pNumber: "",
+      // duration: "",
+    };
+  },
   head() {
     return {
       title: "Create - Nuxt.js",

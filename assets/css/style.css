@@ -1107,9 +1107,6 @@ a:-webkit-any-link {
   }
 }
 
-.wallet {
-  margin-left: 42px;
-}
 
 @media screen and (max-width: 855px) {
   .column2 {
@@ -1118,9 +1115,7 @@ a:-webkit-any-link {
 }
 
 
-.wallet:hover {
-  box-shadow: #921818;
-}
+
 
 .raise:hover,
 .raise:focus {

@@ -1,55 +1,56 @@
 <template>
   <div>
 
-	    <v-tabs
-        background-color="#FFFFEA"
-        slider-color="#C89933"
-        optional
-        right
-        active-class="active"
+  <div id="visa">
+    <h1>Vue Visa Application</h1>
+    <form>
+      <label for="first name">First Name:</label>
+      <input type="text" v-model.lazy="fName" required>
+      <br>
+      <label for="last name">Last Name:</label>
+      <input type="text" v-model.lazy="lName" required>
+      <br>
+      <label for="country">Nationality:</label>
+      <input type="text" v-model.lazy="country" required>
+      <br>
+      <label for="passport number">Passport Number:</label>
+      <input type="text" v-model.lazy="pNumber" required>
 
-        >
+      <label for="duration">Duration of stay:</label>
+      <input type="text" v-model.lazy="duration" required>
 
-        <v-tab
-          class="normalize font-weight-bold "
-          to="/tab1"
-          >
-          Tab 1
-        </v-tab>          
+      <h2>Preview Application Details</h2>
+      <p>First Name: {{fName}}</p>
+      <p>Last Name: {{lName}}</p>
+      <p>Nationality: {{country}}</p>
+      <p>Passport Number: {{pNumber}}</p>
+      <p>Duration: {{duration}}</p>
 
-        <v-tab    
-          class="normalize font-weight-bold"
-          to="/tab2"
-          >
-          Tab 2
-        </v-tab>   
+    </form>
+   </div>
+ 
+</div>
 
-        <v-tab
-          class="normalize font-weight-bold"
-          to="/tab3"
-          >
-          Tab 3
-        </v-tab>
-  
-          
-      </v-tabs>
+	  
 
-  <Button
-    v-bind:class="{'white': !clicked, 'blue': clicked}"
-    v-on:click ="clicked = !clicked"
-  ></Button>
-
-
-  </div>
 </template>
 
 <script>
 export default {
+  name: "about",
+  props: {
+    msg: String,
+  },
   data() {
     return {
-      clicked: false,
+      fName: "",
+      lName: "",
+      country: "",
+      pNumber: "",
+      duration: "",
     };
   },
+
   head() {
     return {
       title: "About Us - Nuxt.js",
@@ -62,11 +63,13 @@ export default {
       ],
     };
   },
-  name: "about",
 };
 </script>
 
 <style>
+.active {
+  background-color: red;
+}
 .white {
   background-color: white;
   width: 200px;

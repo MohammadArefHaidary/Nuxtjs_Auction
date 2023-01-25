@@ -44,12 +44,12 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" dir="rtl">
               <li class="nav-item">
-                <NuxtLink to="/create" class="nav-link active" aria-current="page" href="#" style="color:black;">ایجاد</NuxtLink>
+                <NuxtLink  to="/create" class="nav-link active " aria-current="page" href="#" style="color:black;">ایجاد</NuxtLink>
               </li>
               
              <template v-if="$auth.loggedIn">
                 <li class="nav-item">
-                  <nuxt-link to="/profile" class="nav-link active" aria-current="page" href="#" style="color:black;">
+                  <nuxt-link to="/profile" class="nav-link active " aria-current="page" href="#">
                     {{$auth.user.name}}
                   </nuxt-link>
                 </li>
@@ -59,8 +59,8 @@
 
             <template v-if="!$auth.loggedIn">
               <NuxtLink to="/login">
-                <div class="wallet">
-                  <button class="btn btn-outline-success raise"
+                <div>
+                  <button class="btn btn-outline-success raise "
                           style="color: white;background-color: black;" type="submit" data-bs-toggle="modal"
                           data-bs-target="#exampleModal">ورود
                   </button>
@@ -69,7 +69,7 @@
               </NuxtLink>
             </template>
             <template v-if="$auth.loggedIn">
-              <div class="wallet">
+              <div class="nuxt-link-exact-active">
                 <button class="btn btn-outline-success raise"
                         @click.prevent="logout"
                         style="color: white;background-color: black;" type="submit" data-bs-toggle="modal"
@@ -96,6 +96,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      clicked: false,
+      isActive: false,
+    };
+  },
   auth: true,
   methods: {
     async logout() {
@@ -107,6 +113,14 @@ export default {
 </script>
 
 <style scoped>
+.nav-link {
+  color: black;
+}
+.nuxt-link-exact-active {
+  color: white;
+  background-color: black;
+  border-radius: 88px;
+}
 .logo-img {
   width: 80px;
 }
