@@ -132,3 +132,8 @@ section {
   right: 109px;
 
 }
+
+.btn-outline-success {
+
+  border-color: black !important;
+}

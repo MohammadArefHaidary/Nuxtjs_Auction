@@ -52,6 +52,18 @@
 <script>
 export default {
   auth: false,
+  head() {
+    return {
+      title: "Register - Nuxt.js",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "About our company Nuxt.js ",
+        },
+      ],
+    };
+  },
   data() {
     return {
       errors: {

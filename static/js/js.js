@@ -49,7 +49,6 @@ if (window.screen.width < 800) {
     slider.scrollLeft = scrollLeft - walk;
   });
 }
-
 // Put a nodelist of li's in variable lis
 const lis = document.querySelectorAll("ul li");
 // Add an event listener to each li

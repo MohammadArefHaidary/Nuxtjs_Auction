@@ -6,6 +6,7 @@ export default {
   },
 
   head: {
+    titleTemplate: "%s - Nuxt.js",
     title: "Auction website",
     htmlAttrs: {
       lang: "en",

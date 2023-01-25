@@ -72,6 +72,18 @@
 <script>
 // import swal from 'sweetalert2'
 export default {
+  head() {
+    return {
+      title: "Login - Nuxt.js",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "About our company Nuxt.js ",
+        },
+      ],
+    };
+  },
   data() {
     return {
       errors: {

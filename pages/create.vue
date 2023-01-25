@@ -29,6 +29,18 @@
 export default {
   auth: true,
   name: "create",
+  head() {
+    return {
+      title: "Create - Nuxt.js",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "About our company Nuxt.js ",
+        },
+      ],
+    };
+  },
 };
 </script>
 

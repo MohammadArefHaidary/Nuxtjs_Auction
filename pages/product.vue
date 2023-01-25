@@ -281,6 +281,18 @@ import product_card from "~/components/product_card.vue";
 import { usePosts } from "../composables/usePosts";
 
 export default {
+  head() {
+    return {
+      title: "Product - Nuxt.js",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "About our company Nuxt.js ",
+        },
+      ],
+    };
+  },
   setup() {
     const { posts } = usePosts();
 

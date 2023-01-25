@@ -47,6 +47,25 @@
 export default {
   auth: true,
   name: "profile",
+  head() {
+    let user = this.$auth.user.name;
+
+    return {
+      title: `${user} @(${user}) - Nuxt.js`,
+      meta: [
+        {
+          hid: `iOSUrl`,
+          property: "al:ios:url",
+          content: `myapp://user?screen_name=${user}`,
+        },
+        {
+          hid: `description`,
+          name: "description",
+          content: `${user}'s public profile at Nuxt.js`,
+        },
+      ],
+    };
+  },
 };
 </script>
 
