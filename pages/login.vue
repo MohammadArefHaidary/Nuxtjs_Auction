@@ -103,6 +103,7 @@ export default {
         .loginWith("laravelSanctum", {
           data: this.form,
         })
+        
 
         .then((res) => {
           console.log(res);

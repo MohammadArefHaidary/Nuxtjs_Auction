@@ -78,6 +78,7 @@ export default {
       },
     };
   },
+
   methods: {
     async submitForm() {
       await this.$axios.$get("sanctum/csrf-cookie");
@@ -90,8 +91,12 @@ export default {
         })
         // this.$router.replace({name: 'index'})
 
-        .then(function (resp) {
+        // .then(function (resp) {
           // console.log(resp);
+        // })
+        .then((res) => {
+          console.log(res);
+          this.$router.push("/login");
         })
         // .catch(function (err) {
         //   console.log(err.response.data.errors.email);
